@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+    <header class="navbar navbar-expand-xl navbar-dark sticky-top p-4" id="cabecalho">
         <div class="container">
-            <h1 class="navbar-brand m-0">Gustavo Inglez - Desenvolvedor Web</h1>
+            <h1 class="navbar-brand m-0 page-title fw-bold text-wrap fs-5">Gustavo Inglez / <span class="text-colored">Desenvolvedor Web</span></h1>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a href="#inicio" class="nav-link">
+                        <a href="#inicio" class="nav-link active">
                             <i class="bi bi-house me-1"></i>
+                            Início
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a href="#portifolio" class="nav-link">
+                        <a href="#portfolio" class="nav-link">
                             <i class="bi bi-terminal me-1"></i>
-                            Portifolio
+                            Portfólio
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
@@ -54,171 +55,190 @@
         </div>
     </header>
     <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
-        <section id="inicio">
+        <section id="inicio" class="bg-dark">
             <div class="carousel slide" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img class="d-block w-100" src="https://placehold.co/1080x720" alt="">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/academica-mobile.jpg">
+                            <img class="d-block w-100" src="img/academica.jpg" alt="Logo do IFSP">
+                        </picture>
+                        <div class="carousel-caption">
+                            <h2 class="fw-bold fs-3">Experiência acadêmica</h2>
+                        </div>
                     </div>
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img class="d-block w-100" src="https://placehold.co/1080x720" alt="">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/profissional-mobile.jpg">
+                            <img class="d-block w-100" src="img/profissional.jpg" alt="Logo da empresa DLFELIX">
+                        </picture>
+                        <div class="carousel-caption">
+                            <h2 class="fw-bold fs-3">Experiência profissional</h2>
+                        </div>
                     </div>
-                    <div class="carousel-item active" data-bs-interval="3000">
-                        <img class="d-block w-100" src="https://placehold.co/1080x720" alt="">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/profissionalizante-mobile.jpg">
+                            <img class="d-block w-100" src="img/profissionalizante.jpg" alt="Logo da EBAC">
+                        </picture>
+                        <div class="carousel-caption">
+                            <h2 class="fw-bold fs-3">Formação profissionalizante</h2>
+                        </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
             </div>
-        </section>
-        <section id="portifolio" class="pt-5 pb-5">
+        </section>        
+        <section id="portfolio" class="pt-5 pb-5 bg-dark">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center"><span class="text-colored">Portifolio</span></h2>
+                    <h2 class="section-title fw-bold text-center"><span class="text-colored">Portfólio</span></h2>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                         <div class="card h-100">
-                            <img src="https://placehold.co/400x300" alt="" class="d-block w-100 rounded mb-2">
+                            <img src="img/projeto1.jpg" alt="Imagem Projeto 1" class="d-block w-100 rounded mb-2">
                             <div class="card-body">
-                                <h3 class="card-title text-colored fs-4">Projeto 1</h3>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus doloremque autem minus vero praesentium commodi sapiente repellat corporis, aspernatur debitis quasi blanditiis? Itaque ex quia et sit ducimus neque unde. </p>
+                                <h3 class="card-title text-colored fs-4">Calculadora de médias</h3>
+                                <p class="card-text">
+                                    Calculadora de Médias Escolares desenvolvida em JavaScript puro e HTML/CSS. O projeto foi focado na prática de manipulação do DOM (Document Object Model). Implementa lógica de captura e validação de entradas, cálculo modular de média e injeção dinâmica de linhas na tabela, exibindo o status final (Aprovado/Reprovado) baseado em uma nota mínima configurável.
+                                </p>
                             </div>
-                            <div class="card-footer">
-                                <a href="#" target="_blank" class="btn btn-primary">Acessar <i class="bi bi-globe"></i></a>
-                                <a href="#" target="_blank" class="btn btn-secondary">Repositório <i class="bi bi-github"></i></a>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="https://gustavo-projeto-calculadora-medias-two.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/projeto_calculadora_medias" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                         <div class="card h-100">
-                            <img src="https://placehold.co/400x300" alt="" class="d-block w-100 rounded mb-2">
+                            <img src="img/projeto2.jpg" alt="Imagem Projeto 2" class="d-block w-100 rounded mb-2">
                             <div class="card-body">
-                                <h3 class="card-title text-colored fs-4">Projeto 2</h3>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus doloremque autem minus vero praesentium commodi sapiente repellat corporis, aspernatur debitis quasi blanditiis? Itaque ex quia et sit ducimus neque unde. </p>
+                                <h3 class="card-title text-colored fs-4">Action Store</h3>
+                                <p class="card-text">Página de e-commerce estática, desenvolvida em HTML5 e CSS Puro, com foco total no Design Responsivo. A página utiliza consultas @media screen com breakpoints específicos para adaptar layouts de Desktop (4 colunas), Tablet (2 colunas) e Mobile (1 coluna). Demonstra proficiência em Flexbox e CSS Grid para construção de layouts dinâmicos e manutenção da experiência do usuário em qualquer dispositivo.</p>
                             </div>
-                            <div class="card-footer">
-                                <a href="#" target="_blank" class="btn btn-primary">Acessar <i class="bi bi-globe"></i></a>
-                                <a href="#" target="_blank" class="btn btn-secondary">Repositório <i class="bi bi-github"></i></a>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="https://front-end-m11-exercicio.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/FrontEnd-M11---Exercicio" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4 mb-md-0">
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                         <div class="card h-100">
-                            <img src="https://placehold.co/400x300" alt="" class="d-block w-100 rounded mb-2">
+                            <img src="img/projeto3.jpg" alt="Imagem Projeto 3" class="d-block w-100 rounded mb-2">
                             <div class="card-body">
-                                <h3 class="card-title text-colored fs-4">Projeto 3</h3>
-                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus doloremque autem minus vero praesentium commodi sapiente repellat corporis, aspernatur debitis quasi blanditiis? Itaque ex quia et sit ducimus neque unde. </p>
+                                <h3 class="card-title text-colored fs-4">EBAC FLIX</h3>
+                                <p class="card-text">Página promocional para serviço de streaming desenvolvida integralmente com o Bootstrap 5. O foco foi na utilização de componentes prontos para agilizar o desenvolvimento, como a Navbar Fixa e Responsiva (com Toggler), o Carousel para destaque visual e os Cards para exibir planos e formulários. Demonstra o domínio do Sistema de Grid do Bootstrap (col-12, col-md-6, col-lg-4) para garantir a responsividade do layout em todos os dispositivos, do mobile ao desktop.</p>
                             </div>
-                            <div class="card-footer">
-                                <a href="#" target="_blank" class="btn btn-primary">Acessar <i class="bi bi-globe"></i></a>
-                                <a href="#" target="_blank" class="btn btn-secondary">Repositório <i class="bi bi-github"></i></a>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="https://vercel.com/gustavo-campos-inglez-da-silvas-projects/frontend-m13-exercicio" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/FRONTEND-M13-EXERCICIO" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section id="sobre" class="pt-5 pb-5">
-            <div class="container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <img src="img/perfil.jpg" class="d-block w-100 rounded" alt="">
-                        </div>
-                        <div class="col-md-7 mt-3 mt-md-0">
-                            <h2 class="section-title">Sobre <span class="text-colored">mim</span></h2>
-                            <p>Desenvolvedor Web Full-Stack em formação | Aprendendo a construir soluções modernas com Python, Node.js, e outras tecnologias. Paixão por Raciocínio Lógico e Boas Práticas de Programação. Curva de aprendizado acelerada e determinação para transformar desafios em código.</p> 
-                            <p>Este portfólio é uma amostra de minha trajetória até aqui, e um prelúdio do que pretendo alcançar como desenvolvedor de software.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="tecnologias" class="pt-5 pb-5">
+        </section>        
+        <section id="sobre" class="pt-5 pb-5 bg-secondary">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center mb-5"><span class="text-colored">Tecnologias</span></h2>
+                    <h2 class="section-title fw-bold text-center">Sobre <span class="text-colored">mim</span></h2>
                 </div>
-                
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-lg-6">
+                        <img src="img/perfil.jpg" class="d-block w-100 rounded" alt="">
+                    </div>
+                    <div class="col-sm-12 col-lg-6 mt-4 mt-lg-0">
+                        <p class="fs-4">Desenvolvedor Web Full-Stack em formação | Aprendendo a construir soluções modernas com Python, Node.js, e outras tecnologias. Paixão por Raciocínio Lógico e Boas Práticas de Programação. Curva de aprendizado acelerada e determinação para transformar desafios em código.</p> 
+                        <p class="fs-4">Este portfólio é uma amostra de minha trajetória até aqui, e um prelúdio do que pretendo alcançar como desenvolvedor de software.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tecnologias" class="pt-5 pb-5 bg-dark">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title fw-bold text-center mb-5"><span class="text-colored">Tecnologias</span></h2>
+                </div>
                 <div class="row justify-content-center">
                     <div class="col-md-8">
                         <div class="col-12 mb-4">
-                            <nav class="nav nav-tabs"> 
+                            <nav class="nav nav-tabs justify-content-center"> 
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#frontend" class="fw-bold nav-link active">Front-End</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#backend" class="fw-bold nav-link">Back-End</button>
                                 <button type="button" data-bs-toggle="tab" data-bs-target="#ferramentas" class="fw-bold nav-link">Ferramentas</button>
                             </nav>
                         </div>
-                        
                         <div class="col-12">
-                            <div class="tab-content border-start border-end border-bottom p-3"> <div class="tab-pane active" id="frontend">
+                            <div class="tab-content border-start border-end border-bottom p-3"> 
+                                <div class="tab-pane active" id="frontend">
                                     <div class="row justify-content-between">
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" >
                                             <h5 class="text-colored fw-bold mt-2">HTML5</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" >
                                             <h5 class="text-colored fw-bold mt-2">CSS</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" >
                                             <h5 class="text-colored fw-bold mt-2">Javascript</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" alt="JQuery" style="width: 75px; height: 75px;">
-                                            <h5 class="text-colored fw-bold mt-2">Jquery</h5>
-                                        </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">                    
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" >
                                             <h5 class="text-colored fw-bold mt-2">Bootstrap</h5>
+                                        </div>
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
+                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" />
+                                            <h5 class="text-colored fw-bold mt-2">Node.JS</h5>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="tab-pane" id="backend">
-                                    <div class="row justify-content-between">
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="VB Script" style="width: 75px; height: 75px;">
+                                    <div class="row justify-content-around">
+                                        <div class="col-12 col-sm-6 col-md-4 text-center mt-2 mt-md-0 mb-2 mb-md-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="VB Script" >
                                             <h5 class="text-colored fw-bold mt-2">VB Script</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 text-center mt-2 mt-md-0 mb-2 mb-md-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" >
                                             <h5 class="text-colored fw-bold mt-2">Python</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="CSharp" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 text-center mt-2 mt-md-0 mb-2 mb-md-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="CSharp" >
                                             <h5 class="text-colored fw-bold mt-2">CSharp</h5>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="tab-pane" id="ferramentas">
-                                    <div class="row justify-content-between">
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" style="width: 75px; height: 75px;">
+                                    <div class="row justify-content-around">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" >
                                             <h5 class="text-colored fw-bold mt-2">Git</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" >
                                             <h5 class="text-colored fw-bold mt-2">GitHub</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Storage" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Storage" >
                                             <h5 class="text-colored fw-bold mt-2">Azure Storage</h5>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mb-4">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" style="width: 75px; height: 75px;">
+                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" >
                                             <h5 class="text-colored fw-bold mt-2">Vercel</h5>
                                         </div>
                                     </div>
@@ -229,37 +249,42 @@
                 </div>
             </div>
         </section>
-        <section id="contato" class="pt-5 pb-5">
+        <section id="contato" class="pt-5 pb-5 bg-secondary">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title text-center">Entre em <span class="text-colored">contato</span></h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
+                    <h2 class="section-title fw-bold text-center">Entre em <span class="text-colored">contato</span></h2>
+                </div>                
+                <div class="row justify-content-center"> 
+                    <div class="col-md-8 text-center">                        
                         <div class="row mt-4">
-                            <h3 class="section-title fs-4 text-colored">
+                            <h3 class="section-title fw-bold fs-4 text-colored">
                                 <i class="bi bi-hand-thumbs-up-fill"></i>
-                                Redes Sociais</h3>
-                            <ul class="social-links">
+                                Redes Sociais</h3>                            
+                            <ul class="social-links list-unstyled d-flex justify-content-center">
                                 <li class="fs-5 ">
                                     <a href="https://github.com/gugainglez2" target="_blank">
                                         <i class="bi bi-github text-colored"></i>
                                     </a>
                                 </li>
-                                <li class="fs-5 ms-1 me-1">
-                                    <a href="https://www.linkedin.com/in/gugainglez" target="_blank">
+                                <li class="fs-5 ms-3 me-3">
+                                    <a href="https://www.linkedin.com/in/gustavo-inglez" target="_blank">
                                         <i class="bi bi-linkedin text-colored"></i>
                                     </a>
                                 </li>
                                 <li class="fs-5">
-                                    <a href="#">
-                                        <i class="bi bi-envelope-at-fill"></i>
+                                    <a href="mailto:gugainglez@gmail.com" 
+                                        target="_blank"
+                                        class="text-colored"
+                                        data-bs-toggle="tooltip" 
+                                        data-bs-placement="top" 
+                                        title="gugainglez@gmail.com"
+                                        data-bs-custom-class="tooltip-custom-tech"> <i class="bi bi-envelope-at-fill"></i>
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div>                        
                         <div class="row mt-4">
-                            <h3 class="section-title fs-4 text-colored">
+                            <h3 class="section-title fw-bold fs-4 text-colored">
                                 <i class="bi bi-cursor-fill"></i>
                                 Endereço</h3>
                             <p>
@@ -270,9 +295,9 @@
                 </div>
             </div>
         </section>
-        <footer id="contato" class="text-center py-4 text-secondary border-top border-dark">
+        <footer class="text-center py-4 text-secondary">
             <div class="container">
-                <p class="mb-0 text-muted">
+                <p class="mb-0">
                     &copy; 2025 Gustavo Inglez. Todos os direitos reservados.
                 </p>
             </div>
@@ -280,5 +305,9 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
 </body>
 </html>

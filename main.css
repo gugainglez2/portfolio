@@ -1,0 +1,126 @@
+:root {
+    --primary-dark: #121212;
+    --secondary-dark: #1E1E1E;
+    --accent-color: #00BCD4;
+    --text-color: #F0F0F0;
+}
+
+body {
+    background-color: var(--primary-dark);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.page-title {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-color); 
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.text-colored {
+    color: var(--accent-color) !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#cabecalho {
+    background-color: var(--secondary-dark) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    border-bottom: 2px solid var(--accent-color); 
+}
+
+#cabecalho .nav-link {
+    color: var(--text-color); 
+}
+#cabecalho .nav-link.active,
+#cabecalho .nav-link:hover {
+    color: var(--accent-color) !important; 
+    background-color: rgba(240, 240, 240, 0.1);
+}
+
+.carousel-item img {
+    max-height: 457px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.carousel-caption h2 {
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.card {
+    background-color: var(--secondary-dark) !important;
+    border-color: #333;
+    color: var(--text-color) !important;
+}
+
+.card img {
+    max-height: 286px;
+}
+
+.card-footer {
+    border-top: 1px solid #333 !important;
+    background-color: var(--secondary-dark) !important;
+}
+
+footer {
+    background-color: var(--secondary-dark) !important;
+    border-top: 1px solid #333 !important;
+}
+
+.nav-tabs .nav-link {
+    color: var(--text-color);
+    border-color: #333;
+    background-color: var(--primary-dark);
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--accent-color) !important;
+    background-color: var(--secondary-dark) !important;
+    border-color: var(--accent-color) var(--accent-color) var(--secondary-dark) !important; 
+}
+
+.tab-content {
+    border-color: #333 !important;
+    background-color: rgba(240, 240, 240, 0.1); 
+}
+
+.tab-content img {
+    width: 75px; height: 75px
+}
+
+.tooltip-custom-tech .tooltip-inner {
+    background-color: var(--accent-color);
+    color: var(--secondary-dark);
+    font-weight: bold;
+}
+
+.tooltip-custom-tech .tooltip-arrow::before {
+    border-top-color: var(--accent-color);
+}
+
+@media screen and (max-width: 575px) {
+    .carousel-item img {
+        max-height: 336px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .carousel-item img {
+        max-height: 547px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-item img {
+        max-height: 290px;
+    }    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .carousel-item img {
+        max-height: 377px;
+    }  
+}
