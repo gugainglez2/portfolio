@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
@@ -56,9 +57,9 @@
     </header>
     <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
         <section id="inicio" class="bg-dark">
-            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
-                <div class="carousel-inner"><div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
+            <div class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
                         <a href="https://ebaconline.com.br/" target="_blank" aria-label="Acessar o site da EBAC">
                             <picture>
                                 <source media="(max-width: 767px)" srcset="img/profissionalizante-mobile.jpg">
@@ -69,7 +70,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item" data-bs-interval="4000">
                         <a href="https://spo.ifsp.edu.br/" target="_blank" aria-label="Acessar o site do IFSP">
                             <picture>
                                 <source media="(max-width: 767px)" srcset="img/academica-mobile.jpg">
@@ -80,7 +81,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="carousel-item" data-bs-interval="5000">
+                    <div class="carousel-item" data-bs-interval="4000">
                         <a href="https://www.dlfelix.com/" target="_blank" aria-label="Acessar o site da empresa DLFELIX">
                             <picture>
                                 <source media="(max-width: 767px)" srcset="img/profissional-mobile.jpg">
@@ -112,47 +113,216 @@
                 <div class="row">
                     <h2 class="section-title fw-bold text-center"><span class="text-colored">Portfólio</span></h2>
                 </div>
+                
                 <div class="row mt-4">
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                         <div class="card h-100">
-                            <img src="img/projeto1.jpg" alt="Imagem Projeto 1" class="d-block w-100 rounded mb-2">
+                            <img src="./img/twitter.gif" alt="Imagem animada do Twitter Clone" class="d-block card-img-portfolio rounded mb-2">
                             <div class="card-body">
-                                <h3 class="card-title text-colored fs-4">Calculadora de médias</h3>
+                                <h3 class="card-title text-colored fs-4">Twitter Clone</h3>
                                 <p class="card-text">
-                                    Calculadora de Médias Escolares desenvolvida em JavaScript puro e HTML/CSS. O projeto foi focado na prática de manipulação do DOM (Document Object Model). Implementa lógica de captura e validação de entradas, cálculo modular de média e injeção dinâmica de linhas na tabela, exibindo o status final (Aprovado/Reprovado) baseado em uma nota mínima configurável.
+                                    Aplicação full-stack que replica as funcionalidades principais de uma rede social, construída com <strong>Python e Django</strong>. 
+                                    O projeto implementa um sistema completo de <strong>Autenticação e CRUD</strong>, permitindo que usuários criem perfis, publiquem posts e gerenciem suas informações. 
+                                    Um diferencial técnico é a integração com o <strong>Cloudinary</strong> para o armazenamento persistente de mídias na nuvem, superando limitações de ambientes efêmeros. 
+                                    A interface foi desenvolvida com <strong>Tailwind CSS</strong>, garantindo um design moderno, limpo e totalmente responsivo, enquanto o deploy foi otimizado no Render com <strong>Gunicorn e WhiteNoise</strong>.
                                 </p>
                             </div>
                             <div class="card-footer d-flex justify-content-between">
-                                <a href="https://gustavo-projeto-calculadora-medias-two.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
-                                <a href="https://github.com/gugainglez2/projeto_calculadora_medias" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                <a href="https://twitter-clone-tv65.onrender.com/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/twitter_clone" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                         <div class="card h-100">
-                            <img src="img/projeto2.jpg" alt="Imagem Projeto 2" class="d-block w-100 rounded mb-2">
+                            <img src="./img/lotr.png" alt="Imagem Senhor Dos Anéis" class="d-block card-img-portfolio rounded mb-2">
                             <div class="card-body">
-                                <h3 class="card-title text-colored fs-4">Action Store</h3>
-                                <p class="card-text">Página de e-commerce estática, desenvolvida em HTML5 e CSS Puro, com foco total no Design Responsivo. A página utiliza consultas @media screen com breakpoints específicos para adaptar layouts de Desktop (4 colunas), Tablet (2 colunas) e Mobile (1 coluna). Demonstra proficiência em Flexbox e CSS Grid para construção de layouts dinâmicos e manutenção da experiência do usuário em qualquer dispositivo.</p>
+                                <h3 class="card-title text-colored fs-4">O Senhor Dos Anéis 25º Aniversário</h3>
+                                <p class="card-text">
+                                    Landing Page interativa desenvolvida com <strong>SASS e JavaScript Vanilla</strong>. 
+                                    O projeto destaca-se por uma arquitetura modular de estilos e uma experiência de usuário híbrida: 
+                                    sistema de <strong>Tabs no desktop</strong> que se converte automaticamente em <strong>Accordions no mobile</strong> via CSS Grid. 
+                                    Inclui controle dinâmico de scroll para o Header e otimização de performance com o uso de <strong>Gulp</strong>.
+                                </p>
                             </div>
                             <div class="card-footer d-flex justify-content-between">
-                                <a href="https://front-end-m11-exercicio.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
-                                <a href="https://github.com/gugainglez2/FrontEnd-M11---Exercicio" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                <a href="https://senhor-dos-aneis-puce.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/senhor_dos_aneis" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
                         <div class="card h-100">
-                            <img src="img/projeto3.jpg" alt="Imagem Projeto 3" class="d-block w-100 rounded mb-2">
+                            <img src="./img/cc12.gif" alt="Imagem CC12" class="d-block card-img-portfolio rounded mb-2">
                             <div class="card-body">
-                                <h3 class="card-title text-colored fs-4">EBAC FLIX</h3>
-                                <p class="card-text">Página promocional para serviço de streaming desenvolvida integralmente com o Bootstrap 5. O foco foi na utilização de componentes prontos para agilizar o desenvolvimento, como a Navbar Fixa e Responsiva (com Toggler), o Carousel para destaque visual e os Cards para exibir planos e formulários. Demonstra o domínio do Sistema de Grid do Bootstrap (col-12, col-md-6, col-lg-4) para garantir a responsividade do layout em todos os dispositivos, do mobile ao desktop.</p>
+                                <h3 class="card-title text-colored fs-4">Capcom Cup 12</h3>
+                                <p class="card-text">
+                                    Landing Page imersiva de alta fidelidade para o mundial de Street Fighter, desenvolvida com 
+                                    <strong>SASS e Metodologia BEM</strong>. O projeto foca em <strong>Gamer Experience (GX)</strong>, 
+                                    utilizando a biblioteca <strong>AOS.js</strong> para animações de scroll fluidas e lógica de 
+                                    contagem regressiva em JavaScript Vanilla. Implementa soluções avançadas de 
+                                    <strong>Responsividade Crítica</strong>, como o uso de unidades <i>dvh</i> para Hero sections 
+                                    e otimização de assets via <strong>Parcel</strong>. Conta com integração completa de 
+                                    <strong>Meta Tags Open Graph</strong> e Web App Manifest, garantindo performance e 
+                                    compartilhamento profissional em redes sociais.
+                                </p>
                             </div>
                             <div class="card-footer d-flex justify-content-between">
-                                <a href="https://frontend-m13-exercicio.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
-                                <a href="https://github.com/gugainglez2/FRONTEND-M13-EXERCICIO" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                <a href="https://capcom-cup-12.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/capcom_cup_12" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/bookstore.gif" alt="Imagem Bookstore" class="d-block card-img-portfolio rounded mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-colored fs-4">Book Store API</h3>
+                                <p class="card-text">
+                                    API RESTful de alta performance para gerenciamento de livrarias, construída com <strong>Python e Django REST Framework</strong>. 
+                                    O projeto demonstra expertise em <strong>DevOps e Infraestrutura</strong>, utilizando <strong>Docker</strong> para conteinerização e 
+                                    <strong>Poetry</strong> para gestão rigorosa de dependências. 
+                                    A aplicação conta com banco de dados <strong>PostgreSQL</strong> em produção, suporte a múltiplas versões de API (v1/v2) 
+                                    e sistema de autenticação via Token. O deploy foi realizado no Render, otimizado com <strong>WhiteNoise</strong> 
+                                    para o serviço eficiente de arquivos estáticos.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="https://bookstore-ezhd.onrender.com/bookstore/v1/product/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/bookstore" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="./img/disney.png" alt="Imagem Disney+" class="d-block card-img-portfolio rounded mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-colored fs-4">Clone Disney+</h3>
+                                <p class="card-text">
+                                    Réplica de alta fidelidade da <strong>Landing Page oficial de assinatura do Disney+</strong>, com foco em pixel-perfect e estruturação escalável utilizando <strong>SASS e Metodologia BEM</strong>. O projeto destaca-se pela automação do fluxo de trabalho via <strong>Gulp</strong> (compilação de estilos e otimização de assets) e pela implementação de componentes interativos e responsivos, como o sistema de abas de categorias e sanfonas de FAQ (accordion) desenvolvidos com <strong>JavaScript Vanilla</strong>.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="https://clone-disneyplus-seven-phi.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/clone_disneyplus" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <img src="img/efood.gif" alt="Imagem EFood" class="d-block card-img-portfolio rounded mb-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-colored fs-4">EFood</h3>
+                                <p class="card-text">
+                                    Plataforma completa de delivery desenvolvida em <strong>React com TypeScript</strong>. 
+                                    O projeto implementa uma arquitetura robusta utilizando <strong>Redux Toolkit</strong> para 
+                                    gerenciamento de estado global (carrinho) e <strong>RTK Query</strong> para consumo 
+                                    eficiente de APIs. Inclui um fluxo de checkout complexo com validação de dados via 
+                                    <strong>Formik e Yup</strong>, além de design totalmente responsivo com 
+                                    <strong>Styled Components</strong>. Demonstra proficiência na integração 
+                                    entre front-end e serviços back-end.
+                                </p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between">
+                                <a href="https://e-food-khaki.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                <a href="https://github.com/gugainglez2/E-Food" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse" id="maisProjetos">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./img/restaurante.gif" alt="Imagem Projeto Restaurante" class="d-block card-img-portfolio rounded mb-2">
+                                <div class="card-body">
+                                    <h3 class="card-title text-colored fs-4">Página de Restaurante</h3>
+                                    <p class="card-text">
+                                        Landing page institucional sofisticada desenvolvida com foco em alta fidelidade visual, estruturação semântica avançada em <strong>HTML5</strong> e estilização moderna via <strong>CSS3 Puro</strong>. O projeto demonstra domínio prático na construção de layouts fluidos e complexos através de sistemas de alinhamento como <strong>Flexbox e CSS Grid</strong>. Conta com um design totalmente responsivo via <strong>Media Queries</strong>, adaptando-se perfeitamente de telas desktop a dispositivos mobile, além de priorizar a hierarquia visual e tipográfica.
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between">
+                                    <a href="https://projeto-3-ten-red.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                    <a href="https://github.com/gugainglez2/projeto_3" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/ebac_flix.jpg" alt="Imagem EBAC FLIX" class="d-block card-img-portfolio rounded mb-2">
+                                <div class="card-body">
+                                    <h3 class="card-title text-colored fs-4">EBAC FLIX</h3>
+                                    <p class="card-text">
+                                        Página promocional para serviço de streaming desenvolvida integralmente com o Bootstrap 5. O foco foi na utilização de componentes prontos para agilizar o desenvolvimento, como a Navbar Fixa e Responsiva (com Toggler), o Carousel para destaque visual e os Cards para exibir planos e formulários. Demonstra o domínio do Sistema de Grid do Bootstrap (col-12, col-md-6, col-lg-4) para garantir a responsividade do layout em todos os dispositivos, do mobile ao desktop.
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between">
+                                    <a href="https://frontend-m13-exercicio.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                    <a href="https://github.com/gugainglez2/FRONTEND-M13-EXERCICIO" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./img/calc_imc.gif" alt="Imagem Calculadora IMC" class="d-block card-img-portfolio rounded mb-2">
+                                <div class="card-body">
+                                    <h3 class="card-title text-colored fs-4">Calculadora IMC</h3>
+                                    <p class="card-text">
+                                        Aplicação web utilitária e interativa construída com <strong>React e Vite</strong> para o cálculo preciso do Índice de Massa Corporal (IMC). O projeto demonstra o domínio prático em arquitetura baseada em componentes e gerenciamento de estado dinâmico através do hook <strong>useState</strong>, permitindo capturar as entradas de peso e altura e renderizar a classificação de saúde em tempo real. A interface conta com estilização responsiva isolada, garantindo uma experiência fluida tanto em desktops quanto em dispositivos mobile.
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between">
+                                    <a href="https://calculadora-imc-iota-wheat.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                    <a href="https://github.com/gugainglez2/calculadora_imc" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/calc_medias.jpg" alt="Imagem Projeto 1" class="d-block card-img-portfolio rounded mb-2">
+                                <div class="card-body">
+                                    <h3 class="card-title text-colored fs-4">Calculadora de médias</h3>
+                                    <p class="card-text">
+                                        Calculadora de Médias Escolares desenvolvida em JavaScript puro e HTML/CSS. O projeto foi focado na prática de manipulação do DOM (Document Object Model). Implementa lógica de captura e validação de entradas, cálculo modular de média e injeção dinâmica de linhas na tabela, exibindo o status final (Aprovado/Reprovado) baseado em uma nota mínima configurável.
+                                    </p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between">
+                                    <a href="https://gustavo-projeto-calculadora-medias-two.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                    <a href="https://github.com/gugainglez2/projeto_calculadora_medias" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                            <div class="card h-100">
+                                <img src="img/action_store.jpg" alt="Imagem Projeto 2" class="d-block card-img-portfolio rounded mb-2">
+                                <div class="card-body">
+                                    <h3 class="card-title text-colored fs-4">Action Store</h3>
+                                    <p class="card-text">Página de e-commerce estática, desenvolvida em HTML5 e CSS Puro, com foco total no Design Responsivo. A página utiliza consultas @media screen com breakpoints específicos para adaptar layouts de Desktop (4 colunas), Tablet (2 colunas) e Mobile (1 coluna). Demonstra proficiência em Flexbox e CSS Grid para construção de layouts dinâmicos e manutenção da experiência do usuário em qualquer dispositivo.</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between">
+                                    <a href="https://front-end-m11-exercicio.vercel.app/" target="_blank" class="btn btn-info text-dark fw-bold">Acessar <i class="bi bi-globe"></i></a>
+                                    <a href="https://github.com/gugainglez2/FrontEnd-M11---Exercicio" target="_blank" class="btn btn-outline-info fw-bold">Repositório <i class="bi bi-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-12 text-center">
+                        <button id="btn-toggle-portfolio" class="btn btn-info text-dark fw-bold px-4 py-2" type="button" data-bs-toggle="collapse" data-bs-target="#maisProjetos" aria-expanded="false" aria-controls="maisProjetos">
+                            Ver Mais <i class="bi bi-chevron-down ms-1"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -164,11 +334,10 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-sm-12 col-lg-6">
-                        <img src="img/perfil.jpg" class="d-block w-100 rounded" alt="">
+                        <img src="img/perfil.jpg" class="d-block w-100 rounded" alt="Foto de perfil de Gustavo Inglez">
                     </div>
                     <div class="col-sm-12 col-lg-6 mt-4 mt-lg-0">
-                        <p class="fs-4">Desenvolvedor Web Full-Stack em formação | Aprendendo a construir soluções modernas com Python, Node.js, e outras tecnologias. Paixão por Raciocínio Lógico e Boas Práticas de Programação. Curva de aprendizado acelerada e determinação para transformar desafios em código.</p> 
-                        <p class="fs-4">Este portfólio é uma amostra de minha trajetória até aqui, e um prelúdio do que pretendo alcançar como desenvolvedor de software.</p>
+                        <p class="fs-4">Desenvolvedor Web Full-Stack com sólida base acadêmica (IFSP) e experiência prática no mercado corporativo. Especialista em construir soluções robustas de Back-End com Python (Django) e C# (.NET), análise e modelagem de dados, além de interfaces modernas e responsivas com React e TypeScript. Possuo vivência real em manutenção de sistemas legados, migração de arquiteturas e conteinerização (Docker). Focado em raciocínio lógico, resolução de problemas complexos e adaptabilidade técnica rápida.</p>
                     </div>
                 </div>
             </div>
@@ -179,73 +348,154 @@
                     <h2 class="section-title fw-bold text-center mb-5"><span class="text-colored">Tecnologias</span></h2>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <div class="col-12 mb-4">
-                            <nav class="nav nav-tabs justify-content-center"> 
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#frontend" class="fw-bold nav-link active">Front-End</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#backend" class="fw-bold nav-link">Back-End</button>
-                                <button type="button" data-bs-toggle="tab" data-bs-target="#ferramentas" class="fw-bold nav-link">Ferramentas</button>
-                            </nav>
+                    <div class="col-md-10">
+                        <div class="col-12 mb-4 position-relative">
+                            <div class="w-100 overflow-x-auto tabs-responsivas">
+                                <nav class="nav nav-tabs flex-nowrap justify-content-start justify-content-md-center"> 
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#frontend" class="fw-bold nav-link active">Front-End</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#backend" class="fw-bold nav-link">Back-End</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#bancos" class="fw-bold nav-link">Bancos de Dados</button>
+                                    <button type="button" data-bs-toggle="tab" data-bs-target="#ferramentas" class="fw-bold nav-link">Ferramentas & DevOps</button>
+                                </nav>
+                            </div>
                         </div>
                         <div class="col-12">
-                            <div class="tab-content border-start border-end border-bottom p-3"> 
+                            <div class="tab-content border-start border-end border-bottom p-4 bg-dark text-white">
                                 <div class="tab-pane active" id="frontend">
-                                    <div class="row justify-content-between">
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" >
-                                            <h5 class="text-colored fw-bold mt-2">HTML5</h5>
+                                    <div class="row g-4 justify-content-center">
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">HTML5</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" >
-                                            <h5 class="text-colored fw-bold mt-2">CSS</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">CSS3</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="Javascript" >
-                                            <h5 class="text-colored fw-bold mt-2">Javascript</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">JavaScript</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">                    
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" >
-                                            <h5 class="text-colored fw-bold mt-2">Bootstrap</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">TypeScript</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center mt-2 mt-xl-0 mb-2 mb-xl-0">
-                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" />
-                                            <h5 class="text-colored fw-bold mt-2">Node.JS</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">React</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" alt="Redux Toolkit" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Redux Toolkit</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap 5" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Bootstrap 5</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SASS / BEM" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">SASS (BEM)</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" alt="jQuery" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">jQuery / AJAX</h6>
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="tab-pane" id="backend">
-                                    <div class="row justify-content-around">
-                                        <div class="col-12 col-sm-6 col-md-4 text-center mt-2 mt-md-0 mb-2 mb-md-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="VB Script" >
-                                            <h5 class="text-colored fw-bold mt-2">VB Script</h5>
+                                    <div class="row g-4 justify-content-center">
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Python</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 text-center mt-2 mt-md-0 mb-2 mb-md-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" >
-                                            <h5 class="text-colored fw-bold mt-2">Python</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <i class="devicon-django-plain d-block mx-auto" style="color: #2D804E; font-size: 60px; line-height: 60px;"></i>
+                                            <h6 class="text-colored fw-bold mt-2">Django / DRF</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 text-center mt-2 mt-md-0 mb-2 mb-md-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="CSharp" >
-                                            <h5 class="text-colored fw-bold mt-2">CSharp</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C# .NET" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">C# (.NET Core)</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" alt="ASP Classic / VBScript" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">ASP / VBScript</h6>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="tab-pane" id="bancos">
+                                    <div class="row g-4 justify-content-center">
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">PostgreSQL</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">MySQL</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">SQL Server</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <i class="bi bi-database d-block mx-auto" style=" font-size: 60px; line-height: 60px;"></i>
+                                            <h6 class="text-colored fw-bold mt-2">Queries (DDL / DML)</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 text-center">
+                                            <i class="bi bi-diagram-3 d-block mx-auto" style=" font-size: 60px; line-height: 60px;"></i>
+                                            <h6 class="text-colored fw-bold mt-2">Modelagem MER/DER</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="tab-pane" id="ferramentas">
-                                    <div class="row justify-content-around">
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" >
-                                            <h5 class="text-colored fw-bold mt-2">Git</h5>
+                                    <div class="row g-4 justify-content-center">
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Git</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" >
-                                            <h5 class="text-colored fw-bold mt-2">GitHub</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">GitHub</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Storage" >
-                                            <h5 class="text-colored fw-bold mt-2">Azure Storage</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Docker</h6>
                                         </div>
-                                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-center mt-2 mt-lg-0 mb-2 mb-lg-0">
-                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" >
-                                            <h5 class="text-colored fw-bold mt-2">Vercel</h5>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" alt="Node.js" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Node.js (Runtime)</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/poetry/poetry-original.svg" alt="Poetry" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Poetry</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gulp/gulp-plain.svg" alt="Gulp" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Gulp</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="Azure Storage" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Azure Blobs</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <i class="bi bi-images d-block mx-auto" style=" font-size: 60px; line-height: 60px;"></i>
+                                            <h6 class="text-colored fw-bold mt-2">Cloudinary</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" alt="Vercel" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Vercel</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <i class="bi bi-cloud-arrow-up d-block mx-auto" style=" font-size: 60px; line-height: 60px;"></i>
+                                            <h6 class="text-colored fw-bold mt-2">Render</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <i class="bi bi-shield-check d-block mx-auto" style=" font-size: 60px; line-height: 60px;"></i>
+                                            <h6 class="text-colored fw-bold mt-2">Cypress / Pytest</h6>
+                                        </div>
+                                        <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                                            <img class="d-block mx-auto" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="Postman" style="height: 60px;">
+                                            <h6 class="text-colored fw-bold mt-2">Postman / APIs</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -269,18 +519,18 @@
                             <ul class="social-links list-unstyled d-flex justify-content-center">
                                 <li class="fs-5 ">
                                     <a href="https://github.com/gugainglez2" target="_blank">
-                                        <i class="bi bi-github text-colored"></i>
+                                        <i class="bi bi-github social-links"></i>
                                     </a>
                                 </li>
                                 <li class="fs-5 ms-3 me-3">
                                     <a href="https://www.linkedin.com/in/gustavo-inglez" target="_blank">
-                                        <i class="bi bi-linkedin text-colored"></i>
+                                        <i class="bi bi-linkedin social-links"></i>
                                     </a>
                                 </li>
                                 <li class="fs-5">
                                     <a href="mailto:gugainglez@gmail.com" 
                                         target="_blank"
-                                        class="text-colored"
+                                        class="social-links"
                                         data-bs-toggle="tooltip" 
                                         data-bs-placement="top" 
                                         title="gugainglez@gmail.com"
@@ -294,7 +544,7 @@
                                 <i class="bi bi-cursor-fill"></i>
                                 Endereço</h3>
                             <p>
-                                São Paulo-SP, Brasil
+                                Caraguatatuba-SP, Brasil
                             </p>
                         </div>
                     </div>
@@ -304,7 +554,7 @@
         <footer class="text-center py-4 text-secondary">
             <div class="container">
                 <p class="mb-0">
-                    &copy; 2025 Gustavo Inglez. Todos os direitos reservados.
+                    &copy; 2025-2026 Gustavo Inglez. Todos os direitos reservados.
                 </p>
             </div>
         </footer>
@@ -314,6 +564,22 @@
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+        // Seleciona o elemento do colapso e o botão
+        const maisProjetosCollapse = document.getElementById('maisProjetos');
+        const btnTogglePortfolio = document.getElementById('btn-toggle-portfolio');
+
+        if (maisProjetosCollapse && btnTogglePortfolio) {
+            // Quando o container terminar de se expandir (mostrar)
+            maisProjetosCollapse.addEventListener('shown.bs.collapse', () => {
+                btnTogglePortfolio.innerHTML = 'Ver Menos <i class="bi bi-chevron-up ms-1"></i>';
+            });
+
+            // Quando o container terminar de se recolher (esconder)
+            maisProjetosCollapse.addEventListener('hidden.bs.collapse', () => {
+                btnTogglePortfolio.innerHTML = 'Ver Mais <i class="bi bi-chevron-down ms-1"></i>';
+            });
+        }
     </script>
 </body>
 </html>

@@ -20,6 +20,16 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+.social-links {
+    color: #FFF !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.social-links:hover {
+    color: var(--accent-color) !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
 .text-colored {
     color: var(--accent-color) !important;
     font-family: 'Orbitron', sans-serif;
@@ -123,4 +133,46 @@ footer {
     .carousel-item img {
         max-height: 377px;
     }  
+}
+
+.tabs-responsivas::-webkit-scrollbar {
+    display: none;
+}
+.tabs-responsivas {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767px) {
+    .tabs-responsivas .nav-link {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 0.95rem;
+    }
+    
+    .position-relative::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        height: calc(100% - 1px); 
+        background: linear-gradient(to right, rgba(33, 37, 41, 0), rgba(33, 37, 41, 0.9));
+        pointer-events: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .position-relative::after {
+        display: none;
+    }
+}
+
+.card-img-portfolio {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
 }
